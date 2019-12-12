@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // This dependency is used by the application.
+    implementation 'org.apache.kafka:kafka-clients:2.3.0'
+    implementation 'com.mparticle:server-events-sdk:2.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    testImplementation 'junit:junit:4.12'
+}
+
+application {
+    // Define the main class for the application
+    mainClassName = 'com.mparticle.App'
+}
